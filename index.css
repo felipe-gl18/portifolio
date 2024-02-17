@@ -78,6 +78,7 @@ main{
     justify-content: center;
     gap: 112px;
     align-items: center;
+    animation: mainContent 3s ease-in-out ;
 }
 
 .info-section > .info-section-photo {
@@ -252,6 +253,15 @@ footer > .footer-logo > img{
 @keyframes mobileLogoAnimation {
     from{
         margin-left: -100px;
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes mainContent {
+    from{  
         opacity: 0;
     }
     to{
