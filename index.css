@@ -129,6 +129,7 @@ main{
 .project-label > a > button {
     padding: 15px 25px 15px 25px;
     border: 0px;
+    font-size: 0.9rem;
     background-color: white;
     color: rgb(43, 43, 43);
     font-weight: bolder;
