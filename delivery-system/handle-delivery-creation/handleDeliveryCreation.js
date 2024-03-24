@@ -10,8 +10,8 @@ export class HandleDeliveryManCreation {
   }
 
   generateDeliverymanImage() {
-    const deliverymanImage = document.querySelector("img");
-    deliverymanImage.src = "./delivery-system/assets/user.png";
+    const deliverymanImage = document.createElement("img");
+    deliverymanImage.src = "/delivery-system/assets/user.png";
 
     return deliverymanImage;
   }
