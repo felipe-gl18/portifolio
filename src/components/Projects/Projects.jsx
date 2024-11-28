@@ -2,8 +2,6 @@ import { useEffect } from "react";
 import { useState } from "react";
 import styles from "./Projects.module.css";
 function ProjectItem({ description, name, url }) {
-  console.log(name);
-
   const [data, setData] = useState(null);
   useEffect(() => {
     fetch(`https://api.github.com/repos/felipe-gl18/${name}/languages`, {
