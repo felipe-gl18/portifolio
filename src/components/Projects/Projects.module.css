@@ -1,0 +1,42 @@
+.projects {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 63px;
+}
+.languages {
+  display: flex;
+  gap: 12px;
+}
+.languages > p {
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+.projects_list {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  height: auto;
+}
+.projects_list > :nth-child(even) {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.name_and_url_redirection {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.name_and_url_redirection > img {
+  cursor: pointer;
+  height: 32px;
+  width: 32px;
+  transition: 0.6s;
+}
+.name_and_url_redirection > img:hover {
+  cursor: pointer;
+  height: 28px;
+  width: 28px;
+}
