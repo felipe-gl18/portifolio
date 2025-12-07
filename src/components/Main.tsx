@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 const StyledMain = styled.div`
+  position: relative;
   height: 100vh;
   width: 100%;
   display: flex;
@@ -31,9 +32,24 @@ const StyledMain = styled.div`
   }
 `;
 
+const Photo = styled.div`
+  position: absolute;
+  width: 242px;
+  height: 242px;
+  border-radius: 50%;
+
+  top: 200px;
+  right: 240px;
+
+  background-image: url("/professional-photo.png");
+  background-position: center center;
+  background-size: cover;
+`;
+
 export default function Main() {
   return (
     <StyledMain>
+      <Photo />
       <h1>Felipe Lino</h1>
       <span>Software Engineer</span>
       <p>
