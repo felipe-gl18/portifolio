@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Social } from "./social/socialLinks";
+import { Social } from "./social/SocialLinks";
 import Badges from "./badges/Badges";
 import { useTranslation } from "./i18n/useTranslation";
 import LanguageSwitcher from "./LanguageSwitcher";
