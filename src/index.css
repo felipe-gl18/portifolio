@@ -1,11 +1,7 @@
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Geist Variable", sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -49,9 +45,14 @@ button {
 button:hover {
   border-color: #646cff;
 }
-button:focus,
+
+button:focus {
+  outline: none;
+}
+
 button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  outline: 2px solid #512b8a;
+  outline-offset: 3px;
 }
 
 @media (prefers-color-scheme: light) {
