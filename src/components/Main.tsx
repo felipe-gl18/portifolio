@@ -102,18 +102,20 @@ const StyledMain = styled.main`
   }
 `;
 
-const Photo = styled.div`
+const Photo = styled.img`
   position: absolute;
+  display: block;
+
   width: clamp(150px, 18vw, 242px);
   aspect-ratio: 1;
+  height: auto;
+
   border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
 
   top: 140px;
   right: clamp(32px, 8vw, 180px);
-
-  background-image: url("/professional-photo.png");
-  background-position: center center;
-  background-size: cover;
 
   box-shadow:
     0 12px 30px rgba(13, 59, 102, 0.16),
@@ -158,7 +160,15 @@ export default function Main() {
 
   return (
     <StyledMain>
-      <Photo />
+      <Photo
+        src="/professional-photo.webp"
+        alt="Felipe's profile"
+        width={600}
+        height={600}
+        loading="eager"
+        fetchPriority="high"
+        decoding="async"
+      />
 
       <LanguageSwitcher />
 

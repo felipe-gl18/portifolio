@@ -389,7 +389,8 @@ export default function Projects() {
               controls
               autoPlay
               playsInline
-              preload="metadata"
+              preload="none"
+              disablePictureInPicture
               onClick={(event) => event.stopPropagation()}
             />
           </ModalOverlay>,
